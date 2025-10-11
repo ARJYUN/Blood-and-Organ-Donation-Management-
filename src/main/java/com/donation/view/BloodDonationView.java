@@ -310,7 +310,11 @@ public class BloodDonationView extends JFrame {
             }
             
             donation.setDonationCenter(donationCenterField.getText().trim());
-            donation.setStaffId(staffIdField.getText().trim());
+            
+            if (!staffIdField.getText().trim().isEmpty()) {
+                donation.setStaffId(Integer.parseInt(staffIdField.getText().trim()));
+            }
+            
             donation.setNotes(notesArea.getText().trim());
             
             // TODO: Save to database using DAO
@@ -327,7 +331,7 @@ public class BloodDonationView extends JFrame {
             
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, 
-                "Please enter valid numeric values for Quantity, Hemoglobin Level, and Pulse Rate", 
+                "Please enter valid numeric values for Donor ID, Quantity, Hemoglobin Level, Pulse Rate, and Staff ID", 
                 "Validation Error", 
                 JOptionPane.ERROR_MESSAGE);
         }

@@ -49,6 +49,10 @@ public class DatabaseUtil {
         } catch (ClassNotFoundException e) {
             LOGGER.log(Level.SEVERE, "MySQL JDBC Driver not found", e);
             throw new SQLException("MySQL JDBC Driver not found", e);
+        } catch (SQLException e) {
+            LOGGER.log(Level.WARNING, "Database not available, running in offline mode: " + e.getMessage());
+            // Allow application to continue without database for demo purposes
+            // In production, you might want to throw the exception
         }
     }
     

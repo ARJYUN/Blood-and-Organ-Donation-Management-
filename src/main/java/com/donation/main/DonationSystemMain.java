@@ -24,11 +24,12 @@ public class DonationSystemMain {
         try {
             DatabaseUtil.initializeDatabase();
         } catch (Exception e) {
-            LOGGER.log(Level.SEVERE, "Failed to initialize database", e);
-            JOptionPane.showMessageDialog(null, 
-                "Failed to connect to database. Please check your database configuration.",
-                "Database Error", JOptionPane.ERROR_MESSAGE);
-            System.exit(1);
+            LOGGER.log(Level.WARNING, "Failed to initialize database, running in demo mode", e);
+            SwingUtilities.invokeLater(() -> {
+                JOptionPane.showMessageDialog(null, 
+                    "Database not available. Running in demo mode.\nSome features may not work correctly.",
+                    "Database Warning", JOptionPane.WARNING_MESSAGE);
+            });
         }
         
         // Set up the UI look and feel

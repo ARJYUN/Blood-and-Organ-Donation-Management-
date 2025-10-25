@@ -480,8 +480,6 @@ Stores donation transaction records.
 
 ## 📸 Screenshots
 
-> **Note:** Add screenshots of your application here
-
 ### Login Screen
 ![Login Screen](screenshots/login.png)
 
@@ -579,8 +577,8 @@ Contributions are welcome! Please follow these guidelines:
 
 ## 👨‍💻 Contact
 
-**Project Contributors:** [Arjun K](https://github.com/ARJYUN)
-                          [Abhinav V R](https://github.com/abhinav-v-r)
+**Project Contributors:** [Arjun K](https://github.com/ARJYUN),
+                          [Abhinav V R](https://github.com/abhinav-v-r),
                           [Adarsh K](https://github.com/adarsh-k-10)
 ---
 

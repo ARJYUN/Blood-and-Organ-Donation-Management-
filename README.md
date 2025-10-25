@@ -577,22 +577,14 @@ Contributions are welcome! Please follow these guidelines:
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👨‍💻 Contact
 
-**Project Maintainer:** ARJYUN
-
-- GitHub: [@ARJYUN](https://github.com/ARJYUN)
-- Repository: [Blood-and-Organ-Donation-Management](https://github.com/ARJYUN/Blood-and-Organ-Donation-Management)
-
+**Project Contributors:** [Arjun K](https://github.com/ARJYUN)
+                          [Abhinav V R](https://github.com/abhinav-v-r)
+                          [Adarsh K](https://github.com/adarsh-k-10)
 ---
 
-## 🙏 Acknowledgments
+## 🔎 Acknowledgments
 
 - Java Swing documentation and community
 - MySQL documentation
